@@ -42,6 +42,7 @@ def startgame(start):
                 move_counter += 1
                 bot.send_message(message.chat.id, "Поздравляю вы угадали число! Ваше количетво попыток:")
                 bot.send_message(message.chat.id, str(move_counter))
+                bot.send_message(message.chat.id, "Давайте сыгрем еще раз! Угайте число!")
                 secretnumber = random.randint(1, 100)
                 move_counter = 0
 
